@@ -1,5 +1,10 @@
+// next image
+import Image from 'next/image';
+
 const Circles = () => {
-  return <div>Circles</div>;
+  return (
+    <div className='w-[200px] xl:w-[300px] absolute -right-16 -bottom-'></div>
+  )
 };
 
 export default Circles;
