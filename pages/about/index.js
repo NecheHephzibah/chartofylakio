@@ -7,16 +7,20 @@ import {
   FaReact,
   FaWordpress,
   FaFigma,
+  FaProjectDiagram,
+  FaPencilAlt,
 } from "react-icons/fa";
 
 import {
   SiFlask,
   SiTailwindcss,
   SiBootstrap,
-  SiFramer,
-  SiAdobexd,
-  SiAdobephotoshop,
+  SiPython,
+  SiTrello,
+  SiCanva
 } from "react-icons/si";
+import { MdDraw } from 'react-icons/md';
+import { GiWireframeGlobe } from 'react-icons/gi';
 
 //  export data
  export const aboutData = [
@@ -30,32 +34,38 @@ import {
           <FaCss3 />,
           <SiTailwindcss />,
           <SiBootstrap />,
+          <SiPython />,
           <FaJs />,
           <FaReact />,
           <SiFlask />,
-          <SiFramer />,
           <FaWordpress />,
         ],
       },
       {
         title: 'UI/UX Design',
-        icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
+        icons: [
+          <FaFigma />,
+          <SiTrello />,
+          < SiCanva/>,
+          <FaProjectDiagram />,
+          <MdDraw />,
+        ],
       },
     ],
   },
-  {
-    title: 'awards',
-    info: [
-      {
-        title: 'Webby Awards - Honoree',
-        stage: '2011 - 2012',
-      },
-      {
-        title: 'Adobe Design Achievement Awards - Finalist',
-        stage: '2009 - 2010',
-      },
-    ],
-  },
+  // {
+  //   title: 'awards',
+  //   info: [
+  //     {
+  //       title: 'Webby Awards - Honoree',
+  //       stage: '2011 - 2012',
+  //     },
+  //     {
+  //       title: 'Adobe Design Achievement Awards - Finalist',
+  //       stage: '2009 - 2010',
+  //     },
+  //   ],
+  // },
   {
     title: 'credentials',
     info: [
@@ -64,7 +74,7 @@ import {
         stage: '2025',
       },
       {
-        title: 'Computer Science Diploma - Fedinand Computer Academy',
+        title: 'Computer Science Diploma - Fedinand Creative Academy',
         stage: '2014',
       },
     ],
@@ -73,13 +83,14 @@ import {
     title: 'experience',
     info: [
       {
-        title: 'Web Developer - PanZenith Life Insurance',
-        stage: '2023 - 2025',
+        title: 'Web Developer - Freelance',
+        stage: '2024 - present',
       },
       {
-        title: 'Intern - LeadWay Pensure',
-        stage: '2021 - 2022',
+        title: 'Software Engineer - ALX',
+        stage: '2024 - 2025',
       },
+      
     ],
   },
   
@@ -124,7 +135,7 @@ const About = () => {
             exit="hidden"
             className='h2'
           >
-            Chaos <span className='text-accent'>became</span> the norm of the day.
+            I bring <span className='text-accent'>ideas</span> to life.
           </motion.h2>
           <motion.p
             variants={fadeIn('right', 0.4)}
